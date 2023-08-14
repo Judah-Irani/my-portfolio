@@ -6,9 +6,12 @@
         <h1 class="greeting-text">
           {{greeting.title}}
           <span class="wave-emoji">👋</span>
-        </h1>
-        <p class="greeting-text-p subTitle">{{greeting.subTitle}}</p>
-            <app-social-media></app-social-media>
+          </h1>
+          <p class="greeting-text-p subTitle">{{greeting.subTitle}}</p>
+          <p class="greeting-text-div subPoints" ><em><b>Key Highlights:</b> </em> <br> {{greeting.subPoints}}</p>
+          <p class="greeting-text-div subPoints" ><em><b>Attributes:</b> </em> <br> {{greeting.Attributes}}</p>
+          <p class="greeting-text-div subPoints" style="white-space: pre;" ><em><b>Professional Credentials:</b> </em> <br> {{greeting.professionalCredentials}}</p>
+          <app-social-media></app-social-media>
         <div class="button-greeting-div">
 <!--        button-->
           <div>
@@ -23,7 +26,8 @@
       </div>
     </div>
     <div class="greeting-image-div">
-      <img src="../../assets/images/manOnTable.svg" alt="Sarthak sitting on table">
+      <!--<img src="../../assets/images/manOnTable.svg" alt="sitting on table">-->
+      <!--<img src="../../assets/images/me-car.png" alt="It's Me Judah">-->
     </div>
   </div>
 </div>

@@ -17,7 +17,7 @@ export class TopButtonComponent implements OnInit {
       this.windowScrolled = false;
     }
   }
-  scrollToTop(): void {
+  /*scrollToTop(): void {
     (function smoothScroll(): void {
       const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
       if (currentScroll > 0) {
@@ -25,6 +25,10 @@ export class TopButtonComponent implements OnInit {
         window.scrollTo(0, currentScroll - (currentScroll / 8));
       }
     })();
+  }*/
+  scrollToTop(): void {
+    window.scrollTo(0, 0);
+    this.windowScrolled = false;
   }
   ngOnInit(): void {}
 }
