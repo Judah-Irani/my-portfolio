@@ -29,7 +29,7 @@ export class AnimateDirective extends AnimateService {
   @Input() right: number;
 
   // Overrides the viewport with the element's client rect on request
-  protected get viewRect(): ClientRect {
+  protected get viewRect(): any {
     // Selects between the viewport and the element
     const rt = this.element ? this.elref.nativeElement.getBoundingClientRect()
       : this.viewPort.getViewportRect();

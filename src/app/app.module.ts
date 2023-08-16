@@ -20,11 +20,11 @@ import { ExperienceCardComponent } from './experience/experience-card/experience
 import { GithubRepoCardComponent } from './projects/github-repo-card/github-repo-card.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { EducationComponent } from './education/education.component';
-import { GraphQLModule } from './projects/graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import { GithubCalendarComponent } from './github-calendar/github-calendar.component';
 import {AnimateModule} from './animation/animate.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { GraphQLModule } from './projects/graphql.module';
 @NgModule({
     declarations: [
         AppComponent,

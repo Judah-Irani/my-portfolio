@@ -1,13 +1,13 @@
 import {NgModule} from '@angular/core';
 import {ApolloModule, APOLLO_OPTIONS} from 'apollo-angular';
-import {HttpLinkModule, HttpLink} from 'apollo-angular-link-http';
-import {InMemoryCache} from 'apollo-cache-inmemory';
-import { setContext } from 'apollo-link-context';
-import { ApolloLink } from 'apollo-link';
+import {setContext} from '@apollo/client/link/context';
+import {ApolloClientOptions, ApolloLink, InMemoryCache} from '@apollo/client/core';
+import {HttpLink} from 'apollo-angular/http';
 import { HttpClientModule, HttpHeaders } from '@angular/common/http';
 
 const uri = 'https://api.github.com/graphql'; // <-- add the URL of the GraphQL server here
 
+// tslint:disable-next-line:typedef
 export function provideApollo(httpLink: HttpLink) {
   const basic = setContext((operation, context) => ({
     headers: {
@@ -31,7 +31,7 @@ export function provideApollo(httpLink: HttpLink) {
 }
 
 @NgModule({
-  exports: [ApolloModule, HttpLinkModule, HttpClientModule],
+  exports: [ApolloModule, HttpClientModule],
   providers: [
     {
       provide: APOLLO_OPTIONS,
