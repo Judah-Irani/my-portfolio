@@ -11,20 +11,20 @@ export class SkillProgressComponent implements OnInit {
     viewSkillBars: true,
     experience: [
       {
-        Stack: 'Frontend/Design',
-        progressPercentage: '75%'
+        Stack: "Frontend/Design",
+        progressPercentage: "75%"
       },
       {
-        Stack: 'Backend',
-        progressPercentage: '60%'
+        Stack: "Backend",
+        progressPercentage: "60%"
       },
       {
-        Stack: 'Programming',
-        progressPercentage: '60%'
+        Stack: "Programming",
+        progressPercentage: "60%"
       },
       {
-        Stack: 'MachineLearning/AI',
-        progressPercentage: '30%'
+        Stack: "MachineLearning/AI",
+        progressPercentage: "30%"
       }
     ]
   };
@@ -33,8 +33,8 @@ export class SkillProgressComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  progressStyle(percentage: string){
-    return {    width: percentage};
+  progressStyle(percentage:string){
+    return {    width: percentage}
   }
 
 }

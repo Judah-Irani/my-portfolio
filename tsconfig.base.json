@@ -4,23 +4,17 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
-    "noImplicitAny": false,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "allowJs": true,
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ES2022",
-    "module": "ES2022",
-    "useDefineForClassFields": false,
+    "target": "es2015",
+    "module": "es2020",
     "lib": [
-      "ES2022",
+      "es2018",
       "dom",
       "esnext.asynciterable"
-    ],
-    "allowSyntheticDefaultImports": true
+    ]
   }
 }

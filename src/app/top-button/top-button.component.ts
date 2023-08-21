@@ -9,7 +9,7 @@ export class TopButtonComponent implements OnInit {
   windowScrolled: boolean;
   constructor(@Inject(DOCUMENT) private document: Document) {}
   @HostListener('window:scroll', [])
-  onWindowScroll(): void {
+  onWindowScroll() {
     if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
       this.windowScrolled = true;
     }
@@ -30,5 +30,5 @@ export class TopButtonComponent implements OnInit {
     window.scrollTo(0, 0);
     this.windowScrolled = false;
   }
-  ngOnInit(): void {}
+  ngOnInit() {}
 }
