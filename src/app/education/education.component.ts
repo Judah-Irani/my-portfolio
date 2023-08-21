@@ -16,29 +16,29 @@ export class EducationComponent implements OnInit {
     //   className2: "prt_about_learnbox_right"
     // },
     {
-      heading: "B.Tech - Computer Science & Engineering",
-      duration: "2020",
-      subtitle: "GLA University, Mathura",
-      content: "Successfully completed my B.tech in Computer science from GLA University, Mathura.",
-      className1: "mar-right",
-      className2: "prt_about_learnbox_left"
+      heading: 'BSc - Computer Science & Electronics',
+      duration: '2019',
+      subtitle: 'Andhra University, Visakhapatnam',
+      content: 'Successfully completed my Bachelors in Computer science and electronics from Andhra University, Visakhapatnam.',
+      className1: 'mar-right',
+      className2: 'prt_about_learnbox_left'
     },
     {
-      heading: "Higher Secondary(12th)",
-      duration: "2016",
-      subtitle: "CBSE Board",
-      content: "Successfully completed my intermediate studies in 2016 from Gyan Deep Sr. Secondary Public School, Shikohabad.\n" +
-        "Major: PCM.",
-      className1: "mar-left",
-      className2: "prt_about_learnbox_right"
+      heading: 'Board Of Intermediate Education (12th)',
+      duration: '2012',
+      subtitle: 'SSC Board',
+      content: 'Successfully completed my intermediate studies on 2012 from Sree Kasyap Junior College, Visakhapatnam.\n' +
+        'Major: Math, Physics, Chemistry.',
+      className1: 'mar-left',
+      className2: 'prt_about_learnbox_right'
     },
     {
-      heading: "Secondary Stage(10th)",
-      duration: "2014",
-      subtitle: "CBSE Board",
-      content: "Successfully completed my high school studies in 2014 from Georgions Academy, Shikohabad.",
-      className1: "mar-right",
-      className2: "prt_about_learnbox_left"
+      heading: 'Secondary Education (10th)',
+      duration: '2010',
+      subtitle: 'SSC Board',
+      content: 'Successfully completed my high school studies in 2010 from Andhra University EM School, Visakhapatnam.',
+      className1: 'mar-right',
+      className2: 'prt_about_learnbox_left'
     }
     ];
 
