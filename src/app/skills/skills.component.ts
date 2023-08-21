@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AnimationItem} from 'lottie-web';
+import {AnimationOptions} from 'ngx-lottie';
 
 @Component({
   selector: 'app-skills',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
+  options: AnimationOptions = {
+    path: '/assets/animation.json',
+  };
   skillsSection = {
     title: 'What I do💁‍♂️',
     subTitle: 'CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
@@ -20,6 +25,10 @@ export class SkillsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  animationCreated(animationItem: AnimationItem): void {
+    console.log(animationItem);
   }
 
 }

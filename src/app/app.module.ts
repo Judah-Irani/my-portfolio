@@ -25,12 +25,20 @@ import { GithubCalendarComponent } from './github-calendar/github-calendar.compo
 import {AnimateModule} from './animation/animate.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { GraphQLModule } from './projects/graphql.module';
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+
+// Note we need a separate function as it's required
+// by the AOT compiler.
+export function playerFactory() {
+  return player;
+}
+
 @NgModule({
     declarations: [
         AppComponent,
         HeaderComponent,
-
-      GreetingComponent,
+        GreetingComponent,
         ButtonComponent,
         SocialMediaComponent,
         SkillsComponent,
@@ -48,6 +56,7 @@ import { GraphQLModule } from './projects/graphql.module';
         GithubCalendarComponent,
     ],
   imports: [
+    LottieModule.forRoot({ player: playerFactory }),
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
