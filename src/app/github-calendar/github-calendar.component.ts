@@ -10,8 +10,8 @@ export class GithubCalendarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    GitHubCalendar(".calendar", "Judah-Irani", {
-      responsive: true,
+    GitHubCalendar('.calendar', 'Judah-Irani', {
+     // responsive: true,
       tooltips: true
     });
   }

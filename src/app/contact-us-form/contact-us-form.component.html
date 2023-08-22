@@ -1,0 +1,56 @@
+<div class="experience-card" wmAnimate="fadeIn" id="contact" aos speed="fast">
+  <div class="text">
+    You can contact me!
+  </div>
+    <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+      <div class="form-row">
+        <div class="input-data">
+          <input type="text" formControlName="FirstName" required>
+          <div class="underline"></div>
+          <label for="">First Name</label>
+          <div *ngIf="showValidation">
+            <div *ngIf="FormData.controls.FirstName.hasError('required')" class="error">First name cannot be empty.</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="input-data">
+          <input type="text" formControlName="LastName" required>
+          <div class="underline"></div>
+          <label for="">Last Name</label>
+          <div *ngIf="showValidation">
+            <div *ngIf="FormData.controls.LastName.hasError('required')" class="error">Last name cannot be empty.</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="input-data">
+          <input type="text" formControlName="EmailAddress" required/>
+          <div class="underline"></div>
+          <label for="">Email Address</label>
+          <div *ngIf="showValidation">
+            <div *ngIf="FormData.controls.EmailAddress.hasError('required')" class="error">Email is required.</div>
+            <div *ngIf="FormData.controls.EmailAddress.hasError('email')" class="error">Email is not valid.</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="input-data textarea">
+          <textarea rows="8" cols="80" formControlName="Body" name="Body" required></textarea>
+          <div class="underline"></div>
+          <label for="">Write your message</label>
+          <br />
+          <div *ngIf="showValidation">
+            <div *ngIf="FormData.controls.Body.hasError('required')" class="error">Body Cannot be empty.</div>
+          </div>
+          <br />
+            <div class="form-row submit-btn">
+              <div class="input-data">
+                <div class="inner"></div>
+                <input type="submit" value="submit">
+              </div>
+            </div>
+          </div>
+        </div>
+    </form>
+</div>

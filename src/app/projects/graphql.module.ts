@@ -6,6 +6,7 @@ import {HttpLink} from 'apollo-angular/http';
 import { HttpClientModule, HttpHeaders } from '@angular/common/http';
 
 const uri = 'https://api.github.com/graphql'; // <-- add the URL of the GraphQL server here
+// const uri = '"https://api.github.com/repos/user/repo/issues?state=closed&access_token='; // <-- add the URL of the GraphQL server here
 
 // tslint:disable-next-line:typedef
 export function provideApollo(httpLink: HttpLink) {
@@ -17,7 +18,7 @@ export function provideApollo(httpLink: HttpLink) {
   const token = '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'; // Your github token here
   const auth = setContext((operation, context) => ({
     headers: {
-      Authorization: `Bearer ${token}`
+      Authorization: `bearer ${token}`
     },
   }));
 
