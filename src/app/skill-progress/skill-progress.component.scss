@@ -27,7 +27,6 @@ h1{
 .skills-bar{
   font-size: 16px;
   width: 40%;
-  //animation: fade_left 1.5s 6s;
 }
 .skills-container {
   display: flex;
@@ -45,7 +44,6 @@ h1{
   margin-left: 80px;
   max-width: 90%;
   height: auto;
-  //animation: fade_right 1.5s 6s;
 }
 
 /* Media Query */
@@ -70,7 +68,6 @@ h1{
     margin: 20px;
   }
   .skills-image {
-    //display: none;
     order: 2;
   }
 }

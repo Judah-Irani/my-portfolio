@@ -45,12 +45,12 @@ export class SoftwareSkillComponent implements OnInit {
         fontAwesomeClassname: 'fas fa-database'
       },
       {
-        skillName: 'python',
-        fontAwesomeClassname: 'fab fa-python'
+        skillName: 'docker',
+        fontAwesomeClassname: 'fab fa-docker'
       },
       {
-         skillName: 'Firebase',
-         fontAwesomeClassname: 'simple-icons:firebase'
+        skillName: 'Spring',
+        fontAwesomeClassname: 'fas fa-leaf'
       }
       // {
       //   skillName: "Tensorflow",

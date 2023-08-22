@@ -22,6 +22,12 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 export class FooterComponent implements OnInit {
 
   state = 'normal';
+  public contactInfo = {
+    title: 'Contact Me ☎️',
+    subtitle: 'Discuss a project or just want to say hi? My Inbox is open for all.',
+    number: '+91-7989031252',
+    email_address: 'myfamily4jesus@gmail.com'
+  };
   constructor() { }
 
   ngOnInit(): void {

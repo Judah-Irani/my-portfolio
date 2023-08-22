@@ -10,7 +10,6 @@
 }
 
 .skills-main-div > * {
-  flex: 1;
   margin-bottom: 30px;
 }
 
@@ -22,6 +21,7 @@
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
+  margin-top: 120px;
 }
 
 /* Media Query */
@@ -56,5 +56,8 @@
   .skills-image-div {
     /* display: none; */
     order: 2;
+  }
+  .ng-lottie.skills-image {
+    margin-top: -8rem !important;
   }
 }

@@ -24,7 +24,7 @@ export class AnimateService {
   private view$: Observable<ClientRect>;
 
   // By default, use the viewport rectangle
-  protected get viewRect(): ClientRect {
+  protected get viewRect(): any {
     return this.viewPort.getViewportRect();
   }
 
@@ -84,10 +84,10 @@ export class AnimateService {
 
       // Gets the element's bounding rect
       const rect = elm && elm.nativeElement && elm.nativeElement.getBoundingClientRect();
-      if(!rect) { return 0; }
+      if (!rect) { return 0; }
 
       // Return 1.0 when the element is fully within the viewport
-      if(rect.left > view.left - 1 && rect.top > view.top - 1 && rect.right < view.right + 1 && rect.bottom < view.bottom + 1) {
+      if (rect.left > view.left - 1 && rect.top > view.top - 1 && rect.right < view.right + 1 && rect.bottom < view.bottom + 1) {
         return 1;
       }
 

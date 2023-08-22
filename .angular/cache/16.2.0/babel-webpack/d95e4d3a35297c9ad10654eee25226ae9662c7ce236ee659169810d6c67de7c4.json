@@ -1,0 +1,1 @@
+{"ast":null,"code":"export function transformAnimationFilenameToKey(animation) {\n  const [animationName] = animation.split('.json');\n  return `animation-${animationName}`;\n}\n//# sourceMappingURL=server.js.map","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
