@@ -8,8 +8,6 @@
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
-  // margin-top: 2rem;
-  //animation: fade_up 2s;
 }
 
 
@@ -156,13 +154,6 @@ p {
   margin-bottom: 2rem;
 }
 
-/* Media Query */
-//@media (max-width: 1380px) {
-//  .greeting-text-p {
-//    font-size: 20px;
-//  }
-//}
-
 @media (max-width: 768px) {
   .main-button {
     font-size: 15px;
@@ -245,7 +236,6 @@ p {
   }
 }
 .greeting-image-div { /*torn paper border*/
-  // height:450px;
   position:relative;
   top:0;
   bottom:0;
