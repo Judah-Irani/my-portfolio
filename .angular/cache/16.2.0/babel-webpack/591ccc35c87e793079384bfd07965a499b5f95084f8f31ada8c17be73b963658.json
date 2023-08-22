@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { InjectionToken } from '@angular/core';\nexport const LOTTIE_OPTIONS = new InjectionToken('LottieOptions');\n//# sourceMappingURL=symbols.js.map","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

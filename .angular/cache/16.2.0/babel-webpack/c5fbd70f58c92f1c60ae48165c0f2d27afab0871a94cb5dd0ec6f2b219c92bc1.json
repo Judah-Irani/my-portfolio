@@ -1,1 +1,0 @@
-{"ast":null,"code":"'use strict';\n\nvar util = require('./util');\nmodule.exports = SchemaObject;\nfunction SchemaObject(obj) {\n  util.copy(obj, this);\n}","map":null,"metadata":{},"sourceType":"script","externalDependencies":[]}

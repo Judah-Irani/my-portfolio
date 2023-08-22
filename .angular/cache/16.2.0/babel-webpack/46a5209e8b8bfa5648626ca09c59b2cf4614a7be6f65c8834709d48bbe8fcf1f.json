@@ -1,1 +1,0 @@
-{"ast":null,"code":"import { ReactNativeFile } from './ReactNativeFile.mjs';\nexport var isExtractableFile = function isExtractableFile(value) {\n  return typeof File !== 'undefined' && value instanceof File || typeof Blob !== 'undefined' && value instanceof Blob || value instanceof ReactNativeFile;\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
