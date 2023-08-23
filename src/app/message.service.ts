@@ -17,6 +17,6 @@ export class MessageService {
     this.mailOptions.from_email = email;
     this.mailOptions.from_name = name;
     this.mailOptions.message = message;
-    return emailjs.send('service_bor6cef', 'template_nb15e0a', this.mailOptions, 'lHxGyNiIRWptJ1nRY');
+    return emailjs.send("service_r6i1zis","template_nb15e0a", this.mailOptions, 'lHxGyNiIRWptJ1nRY');
   }
 }
