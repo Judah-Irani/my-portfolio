@@ -15,7 +15,7 @@ export function provideApollo(httpLink: HttpLink) {
       Accept: 'charset=utf-8'
     }
   }));
-  const token = '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'; // Your github token here
+  const token = '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'; // Your github token here
   const auth = setContext((operation, context) => ({
     headers: {
       Authorization: `bearer ${token}`
